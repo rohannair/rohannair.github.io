@@ -1,0 +1,31 @@
+html {
+    font-family: "ff-tisa-web-pro", serif;
+    font-size: 16px;
+    background: #e1e1e1;
+}
+
+.innerHeader, .content, .innerFooter {
+    @include outer-container;
+}
+
+.header {
+    background: #ccc;
+}
+.title img {
+    max-width: 48px;
+    vertical-align:middle;
+    width: 100%;
+}
+
+.innerHeader {
+    margin-bottom: -1.5em;
+    padding: 4em 1em;
+}
+
+.content {
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(black,0.2);
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 3px;
+}
