@@ -1,0 +1,18 @@
+---
+layout: default
+title: Work
+heroBanner: /img/splashbg.png
+
+heroTitle: "About Rohan."
+---
+
+<div id="work" class="pageContent">
+   <div class="innerContent">
+    <h1>Work Posts</h1>
+    <ul class="posts">
+      {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

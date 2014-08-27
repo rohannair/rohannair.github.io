@@ -8,10 +8,9 @@ categories: musings
 ---
 
 ## What is a product?
-A product is something a company sells. Okay, everyone knows that. In the tech world, a product is the app/software/service that a company sells. *(P.S. Ecommerce friends — if you’re not selling something you produced yourself, your product tends to be your website!)*
+A product is something a company sells. Okay, everyone knows that. In the tech world, a product is the app/software/service that a company sells. *(P.S. Ecommerce friends — if you’re not selling something that you made yourself, your product tends to be your website!)*
 
 ## Great, what’s a product manager?
-
 A product manager (PM) is the person who is usually in charge of the conception, development and growth of a product. The PM ensures that the development of the product aligns to business goals.
 
 I like to think that the tech PM’s job is to guide design and development teams to build something that people want to pay for.
