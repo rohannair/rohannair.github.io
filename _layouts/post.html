@@ -3,14 +3,7 @@ layout: default
 ---
 
 <div class="pageContent">
-    <div class="hero" id="heroBanner" data-bg="{{ page.heroBanner }}">
-        <div class="hero-inner innerContent">
-            <div class="hero-copy">
-                <h1>{{ page.title }}</h1>
-                <p>{{ page.subtitle }}</p>    
-            </div>
-        </div>
-    </div>
+    {% include hero.html %}
     <div class="innerContent">
         <div class="post">
             {{ content }}

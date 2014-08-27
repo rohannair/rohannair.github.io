@@ -758,7 +758,7 @@ th {
 
 /* line 1, ../_sass/base/_type.scss */
 body {
-  font-family: "ff-tisa-web-pro";
+  font-family: "freight-text-pro", serif;
   font-size: 16px;
   color: #96969D;
 }
@@ -793,29 +793,49 @@ p + p {
 
 /* line 1, ../_sass/base/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "adelle-sans";
+  font-family: "nimbus-sans-condensed", "adelle-sans", sans-serif;
   font-weight: 900;
   margin-bottom: 2rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   color: #2E2E31;
-}
-
-/* line 10, ../_sass/base/_headings.scss */
-h2 {
-  font-size: 3.6rem;
+  text-transform: uppercase;
   line-height: 1;
 }
 
-/* line 14, ../_sass/base/_headings.scss */
-h4 {
-  font-size: 1.8em;
-  line-height: 1.2;
-  margin-top: -1rem;
+/* line 12, ../_sass/base/_headings.scss */
+h1, .alpha {
+  font-size: 2.618rem;
 }
-/* line 19, ../_sass/base/_headings.scss */
-h4 em {
+
+/* line 16, ../_sass/base/_headings.scss */
+h2, .beta {
+  font-size: 2.427rem;
+}
+
+/* line 20, ../_sass/base/_headings.scss */
+h3, .gamma {
+  font-size: 1.618rem;
+}
+
+/* line 24, ../_sass/base/_headings.scss */
+h4, .delta {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+/* line 27, ../_sass/base/_headings.scss */
+h4 em, .delta em {
   font-weight: normal;
+}
+
+/* line 32, ../_sass/base/_headings.scss */
+.mega {
+  font-size: 4.236rem;
+}
+
+/* line 35, ../_sass/base/_headings.scss */
+.submega {
+  font-size: 3.927rem;
 }
 
 /* line 1, ../_sass/components/_page-head.scss */
@@ -971,8 +991,9 @@ h4 em {
   margin-bottom: 4em;
   position: relative;
 }
-/* line 6, ../_sass/components/_page-hero.scss */
-.hero .hero-inner {
+
+/* line 7, ../_sass/components/_page-hero.scss */
+.hero-inner {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
@@ -983,37 +1004,32 @@ h4 em {
   background: rgba(0, 0, 0, 0.1);
 }
 /* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
-.hero .hero-inner:after {
+.hero-inner:after {
   content: "";
   display: table;
   clear: both;
 }
 /* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
-.hero .hero-inner:after {
+.hero-inner:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 15, ../_sass/components/_page-hero.scss */
-.hero .hero-inner .hero-copy {
+
+/* line 17, ../_sass/components/_page-hero.scss */
+.hero-copy {
   text-align: center;
   color: #fff;
 }
-/* line 19, ../_sass/components/_page-hero.scss */
-.hero .hero-inner .hero-copy h1 {
-  margin-bottom: .5em;
+/* line 20, ../_sass/components/_page-hero.scss */
+.hero-copy h1, .hero-copy p {
   color: inherit;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 25, ../_sass/components/_page-hero.scss */
-.hero .hero-inner .hero-copy p {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-  margin: auto;
-  margin-bottom: 3em;
-  font-weight: 200;
-  line-height: 1.4em;
-  color: inherit;
+/* line 24, ../_sass/components/_page-hero.scss */
+.hero-copy p {
+  margin-top: -1.5em;
+  margin-bottom: 1.5em;
 }
 
 /* Import my styles */

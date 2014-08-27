@@ -2,17 +2,13 @@
 layout: default
 title: Rohan Nair
 heroBanner: /img/splashbg.png
+
+heroTitle: "It's a digital world."
+subtitle: "I help high-growth companies shape their digital strategy to innovate online."
 ---
 
 <div id="home" class="pageContent">
-	<div class="hero" id="heroBanner" data-bg="{{ page.heroBanner }}">
-    <div class="hero-inner innerContent">
-      <div class="hero-copy">
-        <h1>It's a digital world.</h1>
-        <p>I help high growth companies shape their digital strategy to innovate online.</p>	
-      </div>
-    </div>
-  </div>
+	{% include hero.html %}
 
   <div class="talkingPoints innerContent">
     <div class="talkingPoint">

@@ -1,22 +1,37 @@
 h1, h2, h3, h4, h5, h6 {
-    font-family: "adelle-sans";
+    font-family: $font-headings;
     font-weight: 900;
     margin-bottom: 2rem;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     color: $color-heading;
-}
-
-h2 {
-    font-size: 3.6rem;
+    text-transform: uppercase;
     line-height: 1;
 }
-h4 {
-    font-size: 1.8em;
-    line-height: 1.2;
-    margin-top: -1rem;
 
+h1, .alpha {
+    font-size: 2.618rem;
+}
+
+h2, .beta {
+    font-size: 2.427rem;
+}
+
+h3, .gamma {
+    font-size: 1.618rem;
+}
+
+h4, .delta {
+    font-size: 1.5rem;
+    line-height: 1.2;
     em {
         font-weight: normal;
     }
+}
+
+.mega {
+    font-size: 4.236rem;
+}
+.submega {
+    font-size: 3.927rem;
 }

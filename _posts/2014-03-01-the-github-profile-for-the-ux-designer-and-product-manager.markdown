@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The GitHub Profile for the UX Designer and Product Manager"
+heroTitle: "The GitHub Profile for the UX Designer and Product Manager"
 subtitle: "How do you validate your UX gut feelings without having to commit development resources for a feature?"
 date:   2014-03-01 22:56:02
 categories: musings

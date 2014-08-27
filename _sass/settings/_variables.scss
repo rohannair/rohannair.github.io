@@ -9,3 +9,11 @@ $color-main: red;
 $color-heading: $brand-color;
 $color-text: $text-color;
 $color-emphasis: darken($text-color,20%);
+
+// Font variables
+
+$font-serif: 'freight-text-pro', serif;
+$font-sans-serif: 'nimbus-sans-condensed', 'adelle-sans', sans-serif;
+
+$font-headings: $font-sans-serif;
+$font-body: $font-serif
