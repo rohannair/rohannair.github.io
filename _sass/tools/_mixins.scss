@@ -1,3 +1,7 @@
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+
 @mixin coverBackground($bgcolor, $url) {
     background: $bgcolor url($url) no-repeat center center fixed;
     -webkit-background-size: cover;

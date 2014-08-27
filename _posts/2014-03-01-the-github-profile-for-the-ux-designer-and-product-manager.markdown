@@ -2,10 +2,13 @@
 layout: post
 title:  "The GitHub Profile for the UX Designer and Product Manager"
 heroTitle: "The GitHub Profile for the UX Designer and Product Manager"
+heroBanner: "/img/posts/hero-codepen.png"
+
 subtitle: "How do you validate your UX gut feelings without having to commit development resources for a feature?"
-date:   2014-03-01 22:56:02
+date:   2014-03-01
+
 categories: musings
-heroBanner: "//placehold.it/1280x800"
+tags: medium
 ---
 
 I was recently asked how: as a Product Manager, I would approach testing and validating the selection of a new feature for a product, without committing any development resources to it.

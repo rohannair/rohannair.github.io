@@ -2,9 +2,13 @@
 layout: post
 title:  "What the hell is a product ____________?"
 heroTitle: "What the hell is a product ____________?"
-subtitle: "At least twice a week I get into a long-winded explanation of what a product _______ is. Designer, manager, strategist etc. I’ve decided to write it down in the hopes that others may find my musings somewhat useful."
-date:   2014-08-13 22:56:02
+heroBanner: "/img/posts/hero-stevejobs.png"
+
+subtitle: "At least twice a week I get into a long-winded explanation of what a product _______ is. Designer, manager, strategist etc."
+date:   2014-08-13
+
 categories: musings
+tags: medium
 ---
 
 ## What is a product?

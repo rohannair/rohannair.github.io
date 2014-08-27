@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "New Site!"
+heroTitle: "New Site!"
+
+subtitle: "A rundown of where I am with the site, where it's heading, and what I want to get out it."
+date:   2014-08-27
+
+categories: musings
+tags: medium
+---
+
+Welcome to my new website. I had a series of (out-of-date) splash pages over the past few months, and finally took the time to put together a new one, that I will keep up-to-date for the foreseeable future.
+
+## Current Situation
+At the moment, my site is **very** much under construction. As of August 27th at 2:30PM, I have only created the front-page, and have also added 4 posts I wrote on [Medium](http://medium.com/@rohan10).
+
+## Technology
+I came into this build with the mindset that I want to focus on the front-end experience, while keeping the site as light as possible. As such, I chose to built on Jekyll integrated into GitHub Pages.
+
+At the moment, it's a vanilla Jekyll installation with CSS being compiled from SCSS via Compass (on the Command Line). The site is also being run through [Cloudflare](http://cloudflare.com)'s cache.
+
+I eventually want to use [Grunt](http://gruntjs.com) or possibly [Gulp](http://gulpjs.com) to do all my task running so that I can properly minify my JS and CSS, [strip unused styles](https://github.com/giakki/uncss), [automatically add vendor prefixes](https://github.com/postcss/autoprefixer), process images, etc.
+
+### CSS
+SCSS (SASS + CSS) is my go-to preprocessor at the moment with [Thoughtbot](http://thoughtbot.com)'s [Bourbon](http://bourbon.io) family as my helper frameworks.
+
+I thought about using Bootstrap or Foundation, but in the end found them too heavy and opinionated for this project. I didn't need much more than a scaffold and underlying grid, so the Bourbon family was perfect for the job.
+
+At the moment I'm compiling my SCSS from the Compass CLI, but when I move to a proper task runner, I plan on using libsass instead so I can cut down on compile time.
+
+### JavaScript
+At the time of writing this post, I've totally avoided using any Javascript. That will change very soon, and a later version of this site will feature proper interaction animations.
+
+I want to stay away from all single-page-app JS frameworks as they will necessitate me moving off Jekyll and Github Pages.
+
+## Content
+There's nothing in the work section yet. This will change soon, since I have some articles drafted. As a UXer and strategist, I want to focus on process and decision-making that affected the context of my problem-solving. Along these lines, I want a degree of abstraction in my explanations so that the UI design isn't a priority to readers. 
+
+## Taking on new projects
+The obvious end-goal here is to find new projects and people to work with (because I do like eating!). If you would like to work with me (and can't seem to get the contact form to work), shoot me an email at <hello@rohannair.ca> or on [LinkedIn](http://ca.linkedin.com/in/rohannair10/)

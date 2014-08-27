@@ -2,9 +2,13 @@
 layout: post
 title:  "The 30-second primer to the future of SEO"
 heroTitle: "The 30-second primer to the future of SEO"
+heroBanner: "/img/posts/hero-serp.png"
+
 subtitle: "Young marketers, optimize for Facebook shares and you’ll optimize for Search Engines."
-date:   2014-03-08 22:56:02
+date:   2014-03-08
+
 categories: musings
+tags: medium
 ---
 
 ## Some Bold Assumptions:

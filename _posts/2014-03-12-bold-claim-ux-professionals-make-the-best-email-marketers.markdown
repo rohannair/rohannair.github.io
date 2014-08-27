@@ -2,9 +2,13 @@
 layout: post
 title:  "Bold Claim: UX professionals make the best email marketers"
 heroTitle:  "Bold Claim: UX professionals make the best email marketers"
+heroBanner: "/img/posts/hero-email.png"
+
 subtitle: "In which I rant about marketers and email."
-date:   2014-03-12 22:56:02
+date:   2014-03-12
+
 categories: musings
+tags: medium
 ---
 
 One of the best bits of UX work I’ve done was a map of the entire userflow of the Ecommerce site at my old company. It had many branches, covered every contingency, and anyone who I walked through it with came away with a far better understanding of how our site worked.

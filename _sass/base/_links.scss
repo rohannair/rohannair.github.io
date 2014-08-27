@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+a {
+
+    &:link {
+        color: $color-main;
+    }
+
+    &:visited {
+        color: darken( $color-main, 10% );
+    }
+
+    &:hover {
+        color: lighten( $color-main, 10% );
+        border-bottom: 1px dashed lighten( $color-main, 10% );
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+
+}

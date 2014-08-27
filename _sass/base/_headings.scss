@@ -1,7 +1,11 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-headings;
     font-weight: 900;
-    margin-bottom: 2em;
+    margin: 2rem 0;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     color: $color-heading;
