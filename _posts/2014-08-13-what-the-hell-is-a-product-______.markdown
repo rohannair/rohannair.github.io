@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What the hell is a product ____________?"
-heroTitle: "What the hell is a product ____________?"
+heroTitle: "What the hell is a product ____?"
 heroBanner: "/img/posts/hero-stevejobs.png"
 
 subtitle: "At least twice a week I get into a long-winded explanation of what a product _______ is. Designer, manager, strategist etc."
