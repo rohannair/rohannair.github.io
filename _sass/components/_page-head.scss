@@ -1,3 +1,5 @@
+@import "head-svg";
+
 .header {
     @include fixedRow;
     background: $color-heading;
@@ -20,6 +22,10 @@
         // display: none;
     }
 
+    a:hover {
+        border-bottom: 0;
+    }
+
     @media screen and (min-width: 48rem) {
         @include span-columns(6);
         text-align: left;
@@ -28,13 +34,15 @@
             display: inline-block;
         }
     }
-    .svg {
-        max-width: 4rem;
-        vertical-align:middle;
-        width: 100%;
-        margin-right: 10px;
-    }
 }
+
+.svg {
+    max-width: 4rem;
+    vertical-align:middle;
+    width: 100%;
+    margin-right: 10px;
+}
+
 .mainNavigation {
     display:none;
 
