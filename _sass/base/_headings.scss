@@ -2,6 +2,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "adelle-sans";
     font-weight: 900;
     margin-bottom: 2rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: $color-heading;
 }
 
 h2 {
@@ -15,6 +18,5 @@ h4 {
 
     em {
         font-weight: normal;
-        color: #777;
     }
 }

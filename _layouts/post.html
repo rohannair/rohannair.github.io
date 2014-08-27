@@ -1,14 +1,20 @@
 ---
 layout: default
 ---
-<div class="content">
-    <h2>{{ page.title }}</h2>
-    <h4><em>{{ page.subtitle }}</em></h4>
 
-
-
-    <div class="post">
-        {{ content }}
-    </div>    
-    <p class="meta">{{ page.date | date_to_string }}</p>
+<div class="pageContent">
+    <div class="hero" id="heroBanner" data-bg="{{ page.heroBanner }}">
+        <div class="hero-inner innerContent">
+            <div class="hero-copy">
+                <h1>{{ page.title }}</h1>
+                <p>{{ page.subtitle }}</p>    
+            </div>
+        </div>
+    </div>
+    <div class="innerContent">
+        <div class="post">
+            {{ content }}
+        </div>    
+        <p class="meta">{{ page.date | date_to_string }}</p>
+    </div>
 </div>

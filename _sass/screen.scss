@@ -9,7 +9,7 @@
  *
  * GENERIC
  * Normalize.css........A level playing field.
- * Box-sizing...........Better default `box-sizing`.
+ * Box-sizing...........Better default box-sizing.
  *
  * BASE
  * Headings.............H1–H6 styles.
@@ -28,6 +28,7 @@
 
 
 @import "settings/globals";
+@import "settings/variables";
 
 @import "libs/bourbon/bourbon";
 @import "libs/base/base";
@@ -40,6 +41,10 @@
 
 @import "base/type";
 @import "base/headings";
+
+@import "components/page-head";
+@import "components/page-footer";
+@import "components/page-hero";
 
 /* Import my styles */
 @import "pages/globals";

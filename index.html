@@ -1,24 +1,40 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Rohan Nair
+heroBanner: /img/splashbg.png
 ---
 
-<div id="home" class="content">
-	<!-- <div class="hero">
-		 <div class="hero-inner">
-			<a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
-				" alt=""></a>
-				<div class="hero-copy">
-					<h1>Short description of Product</h1>
-					<p>A few reasons why this product is worth using, who it's for and why they need it.</p>	
-				</div>
-				<button>Learn More</button>
-			</div>
-		</div> -->
-		<h1>Journal Posts</h1>
-		<ul class="posts">
-			{% for post in site.posts %}
-			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-			{% endfor %}
-		</ul>
-	</div>
+<div id="home" class="pageContent">
+	<div class="hero" id="heroBanner" data-bg="{{ page.heroBanner }}">
+    <div class="hero-inner innerContent">
+      <div class="hero-copy">
+        <h1>It's a digital world.</h1>
+        <p>I help high growth companies shape their digital strategy to innovate online.</p>	
+      </div>
+    </div>
+  </div>
+
+  <div class="talkingPoints innerContent">
+    <div class="talkingPoint">
+      <h4 class="gamma">Digital is about more than a website</h4>
+      <p>The digital world is complex and your customers use your business across a variety of digital channels and devices.</p>
+    </div>
+    <div class="talkingPoint">
+      <h4 class="gamma">Digital impacts an organization's culture</h4>
+      <p>The internet is a catalyst for change, and every strong organization needs a culture that adapts to the pace of today's world.</p>
+    </div>
+    <div class="talkingPoint">
+      <h4 class="gamma">You don't have to do it alone</h4>
+      <p>Building design, digital marketing, product and technological teams isn't simple.</p>
+    </div>
+  </div>
+
+  <div class="innerContent">
+    <h1>Journal Posts</h1>
+    <ul class="posts">
+      {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

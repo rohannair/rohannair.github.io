@@ -1,0 +1,12 @@
+.footer {
+    background: $color-heading;
+    margin-top:4em;
+}
+
+.innerFooter {
+    padding: 1em 0;
+}
+
+.contact {
+    @include span-columns(6);
+}

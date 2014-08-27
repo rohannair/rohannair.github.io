@@ -1,1 +1,11 @@
 // Global variables
+$brand-color: #2E2E31;
+$text-color: #96969D;
+
+
+// Color variables
+
+$color-main: red;
+$color-heading: $brand-color;
+$color-text: $text-color;
+$color-emphasis: darken($text-color,20%);

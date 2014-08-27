@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width">
 
   <!-- syntax highlighting CSS -->
-  <link rel="stylesheet" href="/css/syntax.css">
+  <!--   <link rel="stylesheet" href="/css/syntax.css"> -->
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/screen.css">
@@ -16,23 +16,29 @@
   <script type="text/javascript" src="//use.typekit.net/ryb4etl.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+  <!-- JS libs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </head>
 <body>
 
   <div class="header">
     <div class="innerHeader">
+
       <h1 class="title">
         <a href="/">
-          <img src="/img/ro-head.svg" alt="{{ site.name }}">
-          {{ site.name }}
+          <img src="/img/ro-head.svg" class="svg" alt="{{ site.name }}">
+          <span>{{ site.name }}</span>
         </a>
-        <small>This site is SEVERELY under-construction</small>
       </h1>
-<!--       <nav class="mainNavigation">
+
+      <nav class="mainNavigation">
         <a href="#">About</a>
         <a href="#">Work</a>
-        <a href="#">Contact</a>
         <a href="#">Journal</a>
-      </nav> -->
+        <a href="#" class="emphasis">Contact</a>
+      </nav>
+      <a href="#" class="navButton">Menu</a>
+
     </div>
   </div>

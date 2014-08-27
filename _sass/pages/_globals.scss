@@ -4,28 +4,21 @@ html {
     background: #e1e1e1;
 }
 
-.innerHeader, .content, .innerFooter {
+.innerContent, .innerFooter {
     @include outer-container;
 }
 
-.header {
-    background: #ccc;
-}
-.title img {
-    max-width: 48px;
-    vertical-align:middle;
-    width: 100%;
+.talkingPoints {
+    @include outer-container;
 }
 
-.innerHeader {
-    margin-bottom: -1.5em;
-    padding: 4em 1em;
+.talkingPoint {
+
+    @media screen and (min-width: 769px) {
+        @include span-columns(4);
+    }
 }
 
-.content {
-    background: #fff;
-    box-shadow: 0 2px 3px rgba(black,0.2);
-    margin-bottom: 2em;
-    padding: 2em;
-    border-radius: 3px;
+.pageContent {
+    padding-top:5em;
 }

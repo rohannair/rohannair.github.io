@@ -10,7 +10,7 @@
  *
  * GENERIC
  * Normalize.css........A level playing field.
- * Box-sizing...........Better default `box-sizing`.
+ * Box-sizing...........Better default box-sizing.
  *
  * BASE
  * Headings.............H1–H6 styles.
@@ -760,31 +760,33 @@ th {
 body {
   font-family: "ff-tisa-web-pro";
   font-size: 16px;
+  color: #96969D;
 }
 
-/* line 6, ../_sass/base/_type.scss */
+/* line 7, ../_sass/base/_type.scss */
 p, ul, ol {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.5em;
   margin-bottom: 0.75em;
+  text-rendering: optimizeLegibility;
 }
 
-/* line 12, ../_sass/base/_type.scss */
+/* line 14, ../_sass/base/_type.scss */
 ul, ol {
   margin-left: 2em;
 }
 
-/* line 15, ../_sass/base/_type.scss */
+/* line 17, ../_sass/base/_type.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 18, ../_sass/base/_type.scss */
+/* line 20, ../_sass/base/_type.scss */
 li {
   margin-bottom: 0.25em;
 }
 
-/* line 21, ../_sass/base/_type.scss */
+/* line 23, ../_sass/base/_type.scss */
 p + p {
   text-indent: 1em;
 }
@@ -794,24 +796,224 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "adelle-sans";
   font-weight: 900;
   margin-bottom: 2rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #2E2E31;
 }
 
-/* line 7, ../_sass/base/_headings.scss */
+/* line 10, ../_sass/base/_headings.scss */
 h2 {
   font-size: 3.6rem;
   line-height: 1;
 }
 
-/* line 11, ../_sass/base/_headings.scss */
+/* line 14, ../_sass/base/_headings.scss */
 h4 {
   font-size: 1.8em;
   line-height: 1.2;
   margin-top: -1rem;
 }
-/* line 16, ../_sass/base/_headings.scss */
+/* line 19, ../_sass/base/_headings.scss */
 h4 em {
   font-weight: normal;
-  color: #777;
+}
+
+/* line 1, ../_sass/components/_page-head.scss */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #2E2E31;
+  line-height: 4em;
+  z-index: 5;
+}
+
+/* line 9, ../_sass/components/_page-head.scss */
+.innerHeader {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em 0;
+}
+/* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
+.innerHeader:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 14, ../_sass/components/_page-head.scss */
+.title {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  text-align: center;
+  margin: 0;
+}
+/* line 38, ../_sass/libs/neat/grid/_span-columns.scss */
+.title:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 48rem) {
+  /* line 14, ../_sass/components/_page-head.scss */
+  .title {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    text-align: left;
+  }
+  /* line 38, ../_sass/libs/neat/grid/_span-columns.scss */
+  .title:last-child {
+    margin-right: 0;
+  }
+  /* line 27, ../_sass/components/_page-head.scss */
+  .title span {
+    display: inline-block;
+  }
+}
+/* line 31, ../_sass/components/_page-head.scss */
+.title .svg {
+  max-width: 4rem;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: 10px;
+}
+
+/* line 38, ../_sass/components/_page-head.scss */
+.mainNavigation {
+  display: none;
+}
+@media screen and (min-width: 48rem) {
+  /* line 38, ../_sass/components/_page-head.scss */
+  .mainNavigation {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    float: right;
+  }
+  /* line 38, ../_sass/libs/neat/grid/_span-columns.scss */
+  .mainNavigation:last-child {
+    margin-right: 0;
+  }
+}
+/* line 46, ../_sass/components/_page-head.scss */
+.mainNavigation a {
+  margin-left: 0.5em;
+  padding: 2px 7px 3px;
+}
+@media screen and (min-width: 48rem) {
+  /* line 46, ../_sass/components/_page-head.scss */
+  .mainNavigation a {
+    text-align: left;
+  }
+}
+/* line 54, ../_sass/components/_page-head.scss */
+.mainNavigation a.emphasis {
+  background: #63636a;
+  border-radius: 3px;
+  color: #fff;
+}
+
+/* line 61, ../_sass/components/_page-head.scss */
+.navButton {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  float: right;
+  text-align: center;
+}
+/* line 38, ../_sass/libs/neat/grid/_span-columns.scss */
+.navButton:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 48rem) {
+  /* line 61, ../_sass/components/_page-head.scss */
+  .navButton {
+    display: none;
+  }
+}
+
+/* line 1, ../_sass/components/_page-footer.scss */
+.footer {
+  background: #2E2E31;
+  margin-top: 4em;
+}
+
+/* line 6, ../_sass/components/_page-footer.scss */
+.innerFooter {
+  padding: 1em 0;
+}
+
+/* line 10, ../_sass/components/_page-footer.scss */
+.contact {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 38, ../_sass/libs/neat/grid/_span-columns.scss */
+.contact:last-child {
+  margin-right: 0;
+}
+
+/* line 1, ../_sass/components/_page-hero.scss */
+.hero {
+  background: #2E2E31 url("") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 4em;
+  position: relative;
+}
+/* line 6, ../_sass/components/_page-hero.scss */
+.hero .hero-inner {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5em;
+  margin: auto;
+  text-align: center;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
+.hero .hero-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
+.hero .hero-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 15, ../_sass/components/_page-hero.scss */
+.hero .hero-inner .hero-copy {
+  text-align: center;
+  color: #fff;
+}
+/* line 19, ../_sass/components/_page-hero.scss */
+.hero .hero-inner .hero-copy h1 {
+  margin-bottom: .5em;
+  color: inherit;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 25, ../_sass/components/_page-hero.scss */
+.hero .hero-inner .hero-copy p {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  margin-bottom: 3em;
+  font-weight: 200;
+  line-height: 1.4em;
+  color: inherit;
 }
 
 /* Import my styles */
@@ -823,91 +1025,46 @@ html {
 }
 
 /* line 7, ../_sass/pages/_globals.scss */
-.innerHeader, .content, .innerFooter {
+.innerContent, .innerFooter {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
-.innerHeader:after, .content:after, .innerFooter:after {
+.innerContent:after, .innerFooter:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* line 11, ../_sass/pages/_globals.scss */
-.header {
-  background: #ccc;
-}
-
-/* line 14, ../_sass/pages/_globals.scss */
-.title img {
-  max-width: 48px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* line 20, ../_sass/pages/_globals.scss */
-.innerHeader {
-  margin-bottom: -1.5em;
-  padding: 4em 1em;
-}
-
-/* line 25, ../_sass/pages/_globals.scss */
-.content {
-  background: #fff;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  margin-bottom: 2em;
-  padding: 2em;
-  border-radius: 3px;
-}
-
-/* line 4, ../_sass/pages/_index.scss */
-.hero {
-  padding-bottom: 4em;
-  margin: 0 -2em;
-  background: red;
-}
-/* line 9, ../_sass/pages/_index.scss */
-.hero .hero-logo img {
-  height: 3em;
-  margin-bottom: 2.5em;
-}
-/* line 14, ../_sass/pages/_index.scss */
-.hero .hero-inner {
+.talkingPoints {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 3em;
-  margin: auto;
-  text-align: center;
 }
 /* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
-.hero .hero-inner:after {
+.talkingPoints:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
-.hero .hero-inner:after {
-  content: "";
-  display: table;
-  clear: both;
+
+@media screen and (min-width: 769px) {
+  /* line 15, ../_sass/pages/_globals.scss */
+  .talkingPoint {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  /* line 38, ../_sass/libs/neat/grid/_span-columns.scss */
+  .talkingPoint:last-child {
+    margin-right: 0;
+  }
 }
-/* line 21, ../_sass/pages/_index.scss */
-.hero .hero-inner .hero-copy {
-  text-align: center;
-}
-/* line 24, ../_sass/pages/_index.scss */
-.hero .hero-inner .hero-copy h1 {
-  font-size: 1.6em;
-  margin-bottom: .5em;
-}
-/* line 29, ../_sass/pages/_index.scss */
-.hero .hero-inner .hero-copy p {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  margin: auto;
-  margin-bottom: 3em;
-  font-weight: 200;
-  line-height: 1.4em;
+
+/* line 22, ../_sass/pages/_globals.scss */
+.pageContent {
+  padding-top: 5em;
 }

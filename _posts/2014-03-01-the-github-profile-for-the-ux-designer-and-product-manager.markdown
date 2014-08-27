@@ -4,9 +4,10 @@ title:  "The GitHub Profile for the UX Designer and Product Manager"
 subtitle: "How do you validate your UX gut feelings without having to commit development resources for a feature?"
 date:   2014-03-01 22:56:02
 categories: musings
+heroBanner: "//placehold.it/1280x800"
 ---
 
-I was recently asked how, as a Product Manager, I would approach testing and validating the selection of a new feature for a product, without committing any development resources to it.
+I was recently asked how: as a Product Manager, I would approach testing and validating the selection of a new feature for a product, without committing any development resources to it.
 
 It was an interesting question, and within the scope and context of the interview, I was a bit stumped. “Isn’t that the point of building it and staging it?” I thought? But I needed the PM hat on, which meant balancing resources efficiently.
 
