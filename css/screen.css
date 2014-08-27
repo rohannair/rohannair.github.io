@@ -2,6 +2,11 @@
 /**
  * CONTENTS
  *
+ * LIBRARIES
+ * Bourbon
+ * Bitters
+ * Neat
+ *
  * SETTINGS
  * Global...............Globally-available variables and config.
  *
@@ -311,13 +316,6 @@ input[type="submit"] {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-}
-
-/* line 2, ../_sass/libs/neat/grid/_grid.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
@@ -756,6 +754,16 @@ th {
   padding: 0;
 }
 
+/* line 1, ../_sass/generic/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 4, ../_sass/generic/_box-sizing.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* line 1, ../_sass/base/_type.scss */
 body {
   font-family: "freight-text-pro", serif;
@@ -795,7 +803,7 @@ p + p {
 h1, h2, h3, h4, h5, h6 {
   font-family: "nimbus-sans-condensed", "adelle-sans", sans-serif;
   font-weight: 900;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   color: #2E2E31;
@@ -836,6 +844,51 @@ h4 em, .delta em {
 /* line 35, ../_sass/base/_headings.scss */
 .submega {
   font-size: 3.927rem;
+}
+
+/* line 1, ../_sass/base/_layout.scss */
+.innerContent, .innerFooter {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
+.innerContent:after, .innerFooter:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 5, ../_sass/base/_layout.scss */
+.talkingPoints {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
+.talkingPoints:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 769px) {
+  /* line 9, ../_sass/base/_layout.scss */
+  .talkingPoint {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  /* line 38, ../_sass/libs/neat/grid/_span-columns.scss */
+  .talkingPoint:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 16, ../_sass/base/_layout.scss */
+.pageContent {
+  padding-top: 5em;
 }
 
 /* line 1, ../_sass/components/_page-head.scss */
@@ -980,6 +1033,10 @@ h4 em, .delta em {
 .contact:last-child {
   margin-right: 0;
 }
+/* line 13, ../_sass/components/_page-footer.scss */
+.contact p {
+  font-size: 0.8em;
+}
 
 /* line 1, ../_sass/components/_page-hero.scss */
 .hero {
@@ -994,20 +1051,13 @@ h4 em, .delta em {
 
 /* line 7, ../_sass/components/_page-hero.scss */
 .hero-inner {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5em;
+  height: 34rem;
+  padding: 1em;
   margin: auto;
   text-align: center;
   z-index: 3;
   background: rgba(0, 0, 0, 0.1);
-}
-/* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
-.hero-inner:after {
-  content: "";
-  display: table;
-  clear: both;
+  position: relative;
 }
 /* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
 .hero-inner:after {
@@ -1016,71 +1066,27 @@ h4 em, .delta em {
   clear: both;
 }
 
-/* line 17, ../_sass/components/_page-hero.scss */
+/* line 18, ../_sass/components/_page-hero.scss */
 .hero-copy {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   text-align: center;
   color: #fff;
 }
-/* line 20, ../_sass/components/_page-hero.scss */
+/* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
+.hero-copy:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 24, ../_sass/components/_page-hero.scss */
 .hero-copy h1, .hero-copy p {
   color: inherit;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-}
-/* line 24, ../_sass/components/_page-hero.scss */
-.hero-copy p {
-  margin-top: -1.5em;
-  margin-bottom: 1.5em;
+  margin: 0;
 }
 
 /* Import my styles */
-/* line 1, ../_sass/pages/_globals.scss */
-html {
-  font-family: "ff-tisa-web-pro", serif;
-  font-size: 16px;
-  background: #e1e1e1;
-}
-
-/* line 7, ../_sass/pages/_globals.scss */
-.innerContent, .innerFooter {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
-.innerContent:after, .innerFooter:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 11, ../_sass/pages/_globals.scss */
-.talkingPoints {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 15, ../_sass/libs/bourbon/addons/_clearfix.scss */
-.talkingPoints:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (min-width: 769px) {
-  /* line 15, ../_sass/pages/_globals.scss */
-  .talkingPoint {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-  }
-  /* line 38, ../_sass/libs/neat/grid/_span-columns.scss */
-  .talkingPoint:last-child {
-    margin-right: 0;
-  }
-}
-
-/* line 22, ../_sass/pages/_globals.scss */
-.pageContent {
-  padding-top: 5em;
-}

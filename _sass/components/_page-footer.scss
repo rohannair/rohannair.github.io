@@ -9,4 +9,8 @@
 
 .contact {
     @include span-columns(6);
+
+    p {
+        font-size:0.8em;
+    }
 }
