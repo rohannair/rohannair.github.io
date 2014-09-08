@@ -10,10 +10,10 @@ categories: musings
 tags: medium
 ---
 
-Welcome to my new website. I had a series of (out-of-date) splash pages over the past few months, and finally took the time to put together a new one, that I will keep up-to-date for the foreseeable future.
+Welcome to my new website. I've had a series of (out-of-date) splash pages over the past few months, and finally took the time to put together a new one. 
 
 ## Current Situation
-At the moment, my site is **very** much under construction. As of August 27th at 2:30PM, I have only created the front-page, and have also added 4 posts I wrote on [Medium](http://medium.com/@rohan10).
+At the moment, my site is **very** much under construction. As of August 27th at 2:30PM, I have only built the front-page, and added 4 posts I wrote on [Medium](http://medium.com/@rohan10).
 
 ## Technology
 I came into this build with the mindset that I want to focus on the front-end experience, while keeping the site as light as possible. As such, I chose to built on Jekyll integrated into GitHub Pages.
